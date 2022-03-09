@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import "./Search.css";
 function Search() {
   return (
-    <div>Search</div>
-  )
+    <div className="search-container">
+      <div>Search</div>
+      <div>Image</div>
+    </div>
+  );
 }
 
-export default Search
+export default Search;
