@@ -1,4 +1,17 @@
 #nav-container {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  background-color: #119b9d;
+  color: white;
+}
+.logo-link {
+  justify-content: flex-start;
+  margin-left: 3.2em;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+  margin-right: 3.2em;
+}
