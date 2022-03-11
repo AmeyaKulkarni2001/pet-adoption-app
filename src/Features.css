@@ -1,0 +1,19 @@
+.section-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 32px;
+}
+.feature-heading,
+.feature-subheading,
+.feature-text {
+  text-align: center;
+}
+.feature-heading,
+.feature-subheading {
+  padding: 16px;
+}
+.feature-text {
+  padding: 32px;
+}
