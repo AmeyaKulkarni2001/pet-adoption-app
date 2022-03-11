@@ -1,12 +1,10 @@
-.footer {
-  margin-bottom: 0;
-}
 .footer-links {
   bottom: 0;
   display: flex;
   flex-direction: column;
   background-color: #119b9d;
   color: white;
+  width: 100%;
 }
 .footer-info {
   display: flex;
