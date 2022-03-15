@@ -1,4 +1,8 @@
 import React from "react";
+import fb from "../assets/images/facebook-4-48.png";
+import twt from "../assets/images/twitter-48.png";
+import inst from "../assets/images/instagram-48.png";
+import whtapp from "../assets/images/whatsapp-48.png";
 import "./Footer.css";
 function Footer() {
   return (
@@ -11,10 +15,18 @@ function Footer() {
         <div> TERMS & CONDITIONS</div>
       </div>
       <div className="footer-social">
-        <div>Facebook</div>
-        <div>Twitter</div>
-        <div>Instagram</div>
-        <div>Whatsapp</div>
+        <div>
+          <img src={fb} alt="facebook-logo" height={30} width={30} />
+        </div>
+        <div>
+          <img src={twt} alt="twitter-logo" height={30} width={30} />
+        </div>
+        <div>
+          <img src={inst} alt="instagram-logo" height={30} width={30} />
+        </div>
+        <div>
+          <img src={whtapp} alt="whatsapp-logo" height={30} width={30} />
+        </div>
       </div>
     </div>
   );
