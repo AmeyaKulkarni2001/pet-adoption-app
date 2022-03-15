@@ -5,4 +5,11 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
+  column-gap: 64px;
+}
+.hero-description {
+  justify-self: end;
+}
+.hero-img {
+  justify-self: start;
 }
