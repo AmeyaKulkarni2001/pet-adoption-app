@@ -8,6 +8,7 @@ import Signup from "./components/Signup";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthWrapper from "./context/auth";
 import "./App.css";
+import ForgotPassword from "./components/ForgotPassword";
 
 function App() {
   return (
@@ -40,6 +41,15 @@ function App() {
             element={
               <>
                 <Signup />
+              </>
+            }
+          />
+
+          <Route
+            path="/forgotpassword"
+            element={
+              <>
+                <ForgotPassword />
               </>
             }
           />
