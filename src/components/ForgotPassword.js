@@ -27,14 +27,6 @@ function ForgotPassword() {
     setLoading(false);
   };
 
-  useEffect(() => {
-    if (user) {
-      navigate("/");
-    } else {
-      console.log("user not logged in");
-    }
-  }, [user]);
-
   return (
     <div>
       <input
