@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth";
-
+import classes from "./Login.css";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -36,25 +36,36 @@ function Login() {
   }, [user]);
 
   return (
-    <div>
-      <input
-        type="email"
-        placeholder="Email"
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      {error != "" && <div style={{ color: "red" }}>{error}</div>}
-      <button onClick={() => handleClick()}>login</button>
-      <div>
-        Don't have an acount?
-        <Link to="/signup">Sign Up here</Link>
-      </div>
-      <div>
-        <Link to="/forgotpassword">Forgot password</Link>
+    <div className="login-page">
+      <div className="form">
+        <form className="login-form">
+          <input
+            type="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          {error != "" && <div style={{ color: "red" }}>{error}</div>}
+          <button className="login-btn" onClick={() => handleClick()}>
+            login
+          </button>
+
+          <div className="message">
+            Don't have an account?
+            <Link className="message signup" to="/signup">
+              Sign Up Here
+            </Link>
+          </div>
+          <div>
+            <Link className="message fp" to="/forgotpassword">
+              Forgot password
+            </Link>
+          </div>
+        </form>
       </div>
     </div>
   );

@@ -10,11 +10,12 @@
 .feature-text,
 .feature-icon {
   text-align: center;
+  margin-bottom: 32px;
 }
 .feature-heading,
 .feature-subheading {
   padding: 16px;
 }
 .feature-text {
-  padding: 32px;
+  padding: 18px;
 }
