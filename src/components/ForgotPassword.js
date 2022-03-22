@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth";
-
+import "./Login.css";
 function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
@@ -28,18 +28,22 @@ function ForgotPassword() {
   };
 
   return (
-    <div>
-      <input
-        type="email"
-        placeholder="Email"
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      {error != "" && <div style={{ color: "red" }}>{error}</div>}
-      <button onClick={() => handleClick()}>send email</button>
-      <div>
-        Don't have an acount?
-        <Link to="/signup">Sign Up here</Link>
-      </div>
+    <div className="login-page">
+      <form className="form">
+        <input
+          type="email"
+          placeholder="Email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        {error != "" && <div style={{ color: "red" }}>{error}</div>}
+        <button onClick={() => handleClick()}>send email</button>
+        <div className="message">
+          Don't have an acount?
+          <Link className="message signup" to="/signup">
+            Sign Up Here
+          </Link>
+        </div>
+      </form>
     </div>
   );
 }
