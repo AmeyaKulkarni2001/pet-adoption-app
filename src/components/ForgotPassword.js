@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth";
-import "./Login.css";
+import "./Form.css";
 function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
@@ -29,7 +29,7 @@ function ForgotPassword() {
 
   return (
     <div className="login-page">
-      <form className="form">
+      <div className="form">
         <input
           type="email"
           placeholder="Email"
@@ -43,7 +43,7 @@ function ForgotPassword() {
             Sign Up Here
           </Link>
         </div>
-      </form>
+      </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { AuthContext } from "../context/auth";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { db, storage } from "../firebase";
 import { doc, setDoc } from "firebase/firestore";
+import "./Form.css";
 
 function Signup() {
   const [email, setEmail] = useState("");
@@ -75,38 +76,50 @@ function Signup() {
   }, [user]);
 
   return (
-    <div>
-      <input
-        type="email"
-        placeholder="Email"
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="first name"
-        onChange={(e) => setFirstName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="last name"
-        onChange={(e) => setLastName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="contact number"
-        onChange={(e) => setContactNumber(e.target.value)}
-      />
-      <button>
-        <input type="file" onChange={(e) => setProfilePic(e.target.files[0])} />
-        Upload Profile Picture
-      </button>
-      {error != "" && <div style={{ color: "red" }}>{error}</div>}
-      <button onClick={() => handleClick()}>Signup</button>
+    <div className="login-page">
+      <div className="form">
+        <div>
+          <input
+            type="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="first name"
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="last name"
+            onChange={(e) => setLastName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="contact number"
+            onChange={(e) => setContactNumber(e.target.value)}
+          />
+          <button>
+            <input
+              style={{
+                color: "#555",
+              }}
+              type="file"
+              onChange={(e) => setProfilePic(e.target.files[0])}
+            />
+            Upload Profile Picture
+          </button>
+          {error != "" && <div style={{ color: "red" }}>{error}</div>}
+          <button style={{ marginTop: "20px" }} onClick={() => handleClick()}>
+            Signup
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
