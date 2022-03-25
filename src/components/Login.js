@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth";
-import classes from "./Login.css";
+import "./Form.css";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -38,7 +38,7 @@ function Login() {
   return (
     <div className="login-page">
       <div className="form">
-        <form className="login-form">
+        <div>
           <input
             type="email"
             placeholder="Email"
@@ -65,7 +65,7 @@ function Login() {
               Forgot password
             </Link>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );
