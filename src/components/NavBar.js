@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 // import FAQ from "./FAQ";
 // import Search from "./Search";
 // import AboutUs from "./AboutUs";
-import Search from "../components/Search";
+import Hero from "./Hero";
 import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 import { AuthContext } from "../context/auth";
@@ -27,8 +27,14 @@ function NavBar() {
           </div>
         </div>
         <div className="nav-links">
-          <div className="nav-link">FAQ</div>
-          <div className="nav-link">Search</div>
+          {/* <div className="nav-link">FAQ</div> */}
+          <Link className="nav-link" to={'/faq'}>
+            FAQ
+          </Link>
+          {/* <div className="nav-link">Search</div> */}
+          <Link className="nav-link" to={'/adopt'}>
+            Search
+          </Link>
           {user ? (
             <div className="nav-link" onClick={handleLogout}>
               Logout
@@ -41,7 +47,7 @@ function NavBar() {
         </div>
       </div>
       <div className="hero-description">
-        <Search />
+        <Hero />
       </div>
     </div>
   );

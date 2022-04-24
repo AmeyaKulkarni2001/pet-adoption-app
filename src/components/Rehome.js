@@ -1,7 +1,9 @@
-import Navbar from "./NavBar";
-import "./Rehome.css";
+import React from 'react'
 
-function Rehome() {
-  <Navbar />;
+const Rehome = () => {
+  return (
+    <div>Rehome</div>
+  )
 }
-export default Rehome;
+
+export default Rehome
