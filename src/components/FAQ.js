@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./FAQ.css";
 function FAQ() {
   return (
-    <div>
+    <div className="faq-body">
       <div>
-        <h1 className="faq-heading">FAQ ABOUT PET ADOPTION</h1>
+        <h1 className="faq-heading">FAQs ABOUT PET ADOPTION</h1>
       </div>
       <div className="faq-container">
         <strong>

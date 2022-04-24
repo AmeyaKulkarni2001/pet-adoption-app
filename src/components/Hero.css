@@ -7,19 +7,25 @@
   text-align: center;
   column-gap: 64px;
 }
-.to-button{
+.to-button {
   background-color: #0d5a7b;
   color: white;
   padding: 15px 25px;
   text-decoration: none;
   margin-right: 2vh;
 }
-.to-button:hover{
+.hero-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.to-button:hover {
   background-color: #050928;
 }
-.links{
-  justify-self: left;
-  /* display: grid; */
+.hero-content {
+  display: flex;
+  flex-direction: column;
 }
 .hero-description {
   justify-self: end;

@@ -1,0 +1,48 @@
+.how-it-works {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  justify-content: center;
+}
+.rehome-info {
+}
+.rehome-image {
+  width: 100%;
+  height: auto;
+}
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ".";
+  color: #119b9d;
+  font-weight: bold;
+}
+.rehome-heading {
+  text-align: center;
+  padding: 32px;
+  font-size: 48px;
+}
+.rehome-btn {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.rehome-btn-link {
+  background-color: #00a8de;
+  color: white;
+  padding: 24px;
+  font-size: 16px;
+  border-radius: 13px;
+  border: none;
+  transition: all 0.3s;
+}
+.rehome-btn-link:hover {
+  background-color: #066385;
+  cursor: pointer;
+}

@@ -5,24 +5,25 @@ import "./Hero.css";
 function Hero() {
   return (
     <div className="search-container">
-      <div className="links">
-        <Link to={"/rehome"} className='to-button'>
-          Rehome
-        </Link>
-        <Link to={"/adopt"} className='to-button'>
-          Adopt
-        </Link>
-      </div>
-      <div>
+      <div className="hero-content">
         <div className="hero-description">
           <h2>Pet Adoption</h2>
           <p>Search to find your new best friend</p>
         </div>
+        <div className="hero-links">
+          <Link to={"/rehome"} className="to-button">
+            Rehome
+          </Link>
+          <Link to={"/adopt"} className="to-button">
+            Adopt
+          </Link>
+        </div>
+      </div>
+      <div>
         <div className="hero-img">
           <img src={hero} alt="pet-adoption" />
         </div>
       </div>
-      
     </div>
   );
 }
