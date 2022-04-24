@@ -1,9 +1,11 @@
-#nav-container {
-  display: flex;
-  justify-content: space-between;
+.hero-container {
   padding: 32px;
   background-color: #119b9d;
   color: white;
+}
+#nav-container {
+  display: flex;
+  justify-content: space-between;
 }
 .logo-link {
   justify-content: flex-start;
