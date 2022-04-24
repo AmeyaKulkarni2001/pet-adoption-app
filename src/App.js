@@ -1,4 +1,6 @@
 import React from "react";
+import FAQ from './components/FAQ'
+import Rehome from './components/Rehome';
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Features from "./Features";
@@ -8,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthWrapper from "./context/auth";
 import "./App.css";
 import ForgotPassword from "./components/ForgotPassword";
+import Adopt from "./components/Adopt";
 
 function App() {
   return (
@@ -48,6 +51,30 @@ function App() {
             element={
               <>
                 <ForgotPassword />
+              </>
+            }
+          />
+          <Route
+            path="/rehome"
+            element={
+              <>
+                <Rehome />
+              </>
+            }
+          />
+          <Route
+            path="/adopt"
+            element={
+              <>
+                <Adopt />
+              </>
+            }
+          />
+          <Route
+            path="/faq"
+            element={
+              <>
+                <FAQ />
               </>
             }
           />

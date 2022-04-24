@@ -7,6 +7,20 @@
   text-align: center;
   column-gap: 64px;
 }
+.to-button{
+  background-color: #0d5a7b;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  margin-right: 2vh;
+}
+.to-button:hover{
+  background-color: #050928;
+}
+.links{
+  justify-self: left;
+  /* display: grid; */
+}
 .hero-description {
   justify-self: end;
 }
