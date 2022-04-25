@@ -1,10 +1,17 @@
+.faq-body {
+  background-color: #ececec;
+  padding: 32px;
+  height: 100vh;
+}
 .faq-heading {
   text-align: center;
   margin-bottom: 18px;
   padding: 16px;
+  margin: 0;
 }
 .container-faq > h3 {
   margin-bottom: 14px;
+  color: #119b9d;
 }
 .container-faq > p {
   padding: 16px;
