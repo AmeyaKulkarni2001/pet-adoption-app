@@ -1,0 +1,41 @@
+Posts Collection:
+    post_id
+    requests []
+    rehomer_id
+    pet_id
+
+Pets Collections: 
+    pet_id
+    pet details:
+        img
+        breed
+        weight
+        sex
+        color
+        age
+        size
+        description
+        location
+
+Rehome form on rehome page: 
+    username
+    contact of adopter
+    pet details: 
+        img
+        breed
+        weight
+        sex
+        color
+        age
+        size
+        description
+        location
+
+User profile Page - Adwait
+    username
+    post
+    requests
+
+Adopt ka pura kaam - Ameya
+    Search (adwait)
+    application for adoption (request)
