@@ -5,6 +5,7 @@ import "./Rehome.css";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import rehome from "../assets/images/rehome-image.jpg";
+import RehomeForm from "./RehomeForm";
 const Rehome = () => {
   return (
     <div>
@@ -18,17 +19,19 @@ const Rehome = () => {
             </div>
           </div>
           <div className="nav-links">
-            <Link className="nav-link" style={{ color: "#000" }} to={"/"}>
-              New Post
-            </Link>
+            <Link
+              className="nav-link"
+              style={{ color: "#000" }}
+              to={"/"}
+            ></Link>
 
-            <Link className="nav-link" style={{ color: "#000" }} to={"/"}>
+            {/* <Link className="nav-link" style={{ color: "#000" }} to={"/"}>
               Requests
             </Link>
 
             <Link className="nav-link" style={{ color: "#000" }} to={"/"}>
               Post History
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
@@ -45,13 +48,6 @@ const Rehome = () => {
         </div>
         <div className="rehome-steps">
           <ol>
-            <li>
-              <h3>Create a Profile</h3>
-              <p>
-                Get your pets posted on Adopt-a-Pet.com to be seen by millions
-                of pet adopters.
-              </p>
-            </li>
             <li>
               <h3>Create a Profile</h3>
               <p>
@@ -87,10 +83,8 @@ const Rehome = () => {
         <h1 className="rehome-heading">
           Ready to Find Your Pet a Loving Forever Home?
         </h1>
-        <div className="rehome-btn">
-          <button className="rehome-btn-link">Rehome A Pet</button>
-        </div>
       </div>
+      <RehomeForm />
       <Footer />
     </div>
   );

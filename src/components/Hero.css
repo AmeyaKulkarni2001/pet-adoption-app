@@ -29,6 +29,7 @@
 }
 .hero-description {
   justify-self: end;
+  width: 100%;
 }
 .hero-img {
   justify-self: start;

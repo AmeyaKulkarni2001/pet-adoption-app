@@ -8,7 +8,7 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-description">
           <h2>Pet Adoption</h2>
-          <p>Search to find your new best friend</p>
+          <p>We help people foster,rehome and adopt pets!.</p>
         </div>
         <div className="hero-links">
           <Link to={"/rehome"} className="to-button">
